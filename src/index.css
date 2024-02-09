@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+    @apply bg-slate-800 text-white
+}
+.main_container{
+ @apply flex items-center justify-center h-screen
+}
+
+.container{
+    @apply bg-slate-900 p-3 flex flex-col mx-5 rounded-xl shadow-lg items-center gap-5 md:w-[400px] lg:w-[500px]
+}
+.container_header{
+    @apply flex items-center justify-between px-2 w-full
+}
+
+.title{
+    @apply text-lg font-bold
+}
+.logo{
+    @apply text-3xl
+}
+
+.input_container{
+    @apply flex items-center gap-2 px-5 w-full 
+}
+.input{
+    @apply bg-slate-600 rounded-lg p-2 placeholder:text-slate-200 w-full
+}
+.input_button{
+    @apply text-xl bg-cyan-600 p-2 rounded-lg hover:opacity-90
+}
+.list_container{
+    @apply flex flex-col-reverse gap-3 w-full px-5 items-center 
+}
+.single_task{
+    @apply flex  gap-3 items-center justify-between w-full bg-slate-600 p-2 rounded-xl px-5 hover:opacity-90 cursor-pointer
+}
+.single_task_finished{
+    @apply flex  gap-3 items-center  justify-between w-full bg-slate-600 p-2 rounded-xl px-5 opacity-60 hover:opacity-70 cursor-pointer
+}
+.list_button{
+    @apply bg-red-600 p-2 rounded-xl text-xs hover:opacity-80
+}
+.reset_button{
+    @apply flex gap-1 items-center bg-blue-900 rounded-xl p-2
+}
